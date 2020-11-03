@@ -12,6 +12,7 @@ spec:
     port: 8096
     protocol: TCP
     targetPort: 8096
+    nodePort: 30046
   selector:
     app: jellyfin
   type: NodePort
