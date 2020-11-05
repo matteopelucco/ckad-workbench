@@ -19,6 +19,7 @@ Composed by:
 - **jellyfin-ingress.yaml**: a simple ingress, exposing /jellyfin to hello-world-service
 
 ### Status
+2020.11.05: Ehm.. everything was ok, only a problem with another ingress overmapping the "/" path. Solved leaving only Jellyfin on and disabling the other service. So.. success!
 2020.11.04: Few progresses, added a "local" mount path, where kubernetes has read / write access. /config and /cache folders are now mounted into my Ubuntu home dir, whereas media files are mounted into /media path. Added nodePort to see if Jellyfin is accessible and.. it is! But still some issues with ingress / services, Jellyfin is running, media folder and config are seen but no access from the outside. But.. progresses :)
 2020.11.03: Still working on that.. ingress works, but Jellyfin.. ehm.. need more time..
 
